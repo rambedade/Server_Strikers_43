@@ -20,14 +20,14 @@ const Playboard = () => {
             <div className='dice'></div>
         </div>
         <div className="player_3">
-            <img src={player_url} alt="player" />
-            <p>Player Name</p>
-            <div className='dice'></div>
+           <div className='dice'></div>
+           <p>Player Name</p>
+           <img src={player_url} alt="player" />
         </div>
         <div className="player_4">
-            <img src={player_url} alt="player" />
-            <p>Player Name</p>
             <div className='dice'></div>
+            <p>Player Name</p>
+            <img src={player_url} alt="player" />
         </div>
 
       <div className='board_grid'>
