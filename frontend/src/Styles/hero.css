@@ -1,0 +1,9 @@
+.hero-subheading {
+  font-size: 1.5rem; /* Adjust size as needed */
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #2d3748; /* Darker gray color, adjust as needed */
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
