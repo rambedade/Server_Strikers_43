@@ -1,0 +1,244 @@
+.board{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.board_grid {
+    width: 70%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.red_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    flex-direction: column;
+}
+
+.red_box > div {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.red_box > div > div {
+    background-color: red;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+}
+
+.green_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    flex-direction: column;
+}
+.green_box > div {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.green_box > div > div {
+    background-color: green;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+}
+
+.blue_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    flex-direction: column;
+}
+
+.blue_box > div {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.blue_box > div > div {
+    background-color: blue;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+}
+
+.yellow_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    flex-direction: column;
+}
+.yellow_box > div {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.yellow_box > div > div {
+    background-color: yellow;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+}
+
+/* mid_boxes */
+
+.green_mid, .blue_mid {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0;
+    cursor: pointer;
+}
+.green_mid > div, .blue_mid > div {
+    border: 0.3px solid #000000;
+    width: 61px;
+    height: 50px;
+}
+
+.red_mid, .yellow_mid {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+    row-gap: 0;
+    cursor: pointer;
+}
+.red_mid > div, .yellow_mid > div {
+    border: 0.3px solid #000000;
+    width: 50px;
+    height: 61px;
+}
+.green {
+    background-color: green;
+}
+.down_icon {
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.yellow {
+    background: yellow;
+}
+.left_arrow {
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.blue {
+    background: blue;
+}
+.up_arrow {
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.red {
+    background: red;
+}
+.right_arrow {
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.star {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.star_fill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+.center_grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    background-image: linear-gradient(green, rgb(218, 87, 87), rgb(204, 204, 103), blue);
+    border-radius: 50%;
+    color: #1a202c;
+}
+
+.player_1 {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.player_2 {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+.player_3 {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+
+.player_4 {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+}
+
+.player_1 img, .player_2 img, .player_3 img, .player_4 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.player_1 p, .player_2 p, .player_3 p, .player_4 p {
+    font-size: 18px;
+}
+
+.player_1 > div, .player_2 > div, .player_3 > div, .player_4 > div {
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+}
