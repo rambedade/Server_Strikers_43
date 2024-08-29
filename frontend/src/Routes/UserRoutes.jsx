@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import ResetPasswordLink from "../components/ResetPasswordLink";
 import ChangePassword from "../components/ChangePassword";
 import User from "../dashboard/User";
+import Playboard from "../components/Playboard";
 
 function UserRoutes() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function UserRoutes() {
         <Route path="/reset-password-link" element={<ResetPasswordLink />} />
         <Route path="/change-password" element={<ChangePassword />} />
         <Route path="/profile" element={<User />} />
+        <Route path="/board" element={<Playboard />} />
       </Routes>
       {!isProfilePage && (
         <div className="footer-section">
